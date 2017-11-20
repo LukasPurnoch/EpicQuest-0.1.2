@@ -1,0 +1,24 @@
+﻿<Window x:Class="EpicQuest_0._1._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+        xmlns:local="clr-namespace:EpicQuest_0._1._2"
+        mc:Ignorable="d"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        Title="EpiQuest" Height="720" Width="1280">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Kiro\Source\Repos\EpicQuest-0.1.2\EpicQuest 0.1.2\EpicQuest 0.1.2\Assets\Background\Background1.jpg"/>
+        </Grid.Background>
+        
+        <Image gif:ImageBehavior.AnimatedSource="C:\Users\Kiro\Source\Repos\EpicQuest-0.1.2\EpicQuest 0.1.2\EpicQuest 0.1.2\Assets\Animations\EpiQuest_GIF.gif" Margin="44,53,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="480" Height="316"/>
+        
+        <Button x:Name="Exit_Game" Content="EXIT GAME" HorizontalAlignment="Right" Margin="0,0,40,23" VerticalAlignment="Bottom" Width="421" Height="96" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="72" FontFamily="Rockwell" Click="Exit_Game_Click"/>
+        <Button x:Name="Load_Game" Content="LOAD GAME" HorizontalAlignment="Right" Margin="0,0,40,124" VerticalAlignment="Bottom" Width="471" Height="96" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="72" FontFamily="Rockwell" Click="Load_Game_Click"/>
+        <Button x:Name="Endless_Mode" Content="ENDLESS MODE" HorizontalAlignment="Right" Margin="0,0,40,220" VerticalAlignment="Bottom" Width="577" Height="96" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="72" FontFamily="Rockwell" Click="Endless_Mode_Click"/>
+        <Button x:Name="New_Game" Content="NEW GAME" HorizontalAlignment="Right" Margin="0,0,40,321" VerticalAlignment="Bottom" Width="431" Height="96" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="72" FontFamily="Rockwell" Click="New_Game_Click"/>
+        
+        <Frame x:Name="Frame1"/>
+    </Grid>
+</Window>
